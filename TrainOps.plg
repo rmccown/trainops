@@ -1,0 +1,188 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TrainOps - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\BOBMCC~1\AppData\Local\Temp\RSP27C3.bat" with contents
+[
+@echo off
+start /wait hcw /C /E /M "hlp\TrainOps.hpj"
+if errorlevel 1 goto :Error
+if not exist "hlp\TrainOps.hlp" goto :Error
+copy "hlp\TrainOps.hlp" .\Debug
+goto :done
+:Error
+echo hlp\TrainOps.hpj(1) : error:
+type "hlp\TrainOps.log"
+:done
+]
+Creating command line "C:\Users\BOBMCC~1\AppData\Local\Temp\RSP27C3.bat"
+Creating temporary file "C:\Users\BOBMCC~1\AppData\Local\Temp\RSP27D4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "pdfxlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /D "USE_THEMES" /FR"Debug/" /Fp"Debug/TrainOps.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Bob McCown\Documents\Visual Studio 2008\Projects\TrainOps\Reports.cpp"
+]
+Creating command line "cl.exe @C:\Users\BOBMCC~1\AppData\Local\Temp\RSP27D4.tmp" 
+Making help file...
+hlp\TrainOps.hpj(1) : error:
+Microsoft (R) Help Compiler
+HCRTF 4.03.0002
+Copyright (c) Microsoft Corp 1990 - 1995. All rights reserved.
+trainops.hpj
+    HC5011: Error: trainops.hpj : 
+ Cannot open the file "C:\Program Files\Microsoft Visual Studio\VC98\MFC\include\afxhelp.hm."
+Creating temporary file "C:\Users\BOBMCC~1\AppData\Local\Temp\RSP29E7.tmp" with contents
+[
+sqlite3.lib libhpdf.lib Msimg32.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/TrainOps.pdb" /debug /machine:I386 /out:"Debug/TrainOps.exe" /pdbtype:sept 
+".\Debug\Config.obj"
+".\Debug\AboutDialog.obj"
+".\Debug\CabooseDetailDialog.obj"
+".\Debug\CabooseDialog.obj"
+".\Debug\CarLocationTrainsDialog.obj"
+".\Debug\CarsDialog.obj"
+".\Debug\CarsListDialog.obj"
+".\Debug\CarTypesDetailDialog.obj"
+".\Debug\CarTypesDialog.obj"
+".\Debug\CommoditiesDialog.obj"
+".\Debug\EditCarDialog.obj"
+".\Debug\EditCommodityDialog.obj"
+".\Debug\EditTrainDialog.obj"
+".\Debug\EquipmentLocationDialog.obj"
+".\Debug\EquipmentNotFoundDialog.obj"
+".\Debug\EquipmentTrackingDialog.obj"
+".\Debug\FolderDlg.obj"
+".\Debug\IGDebugDialog.obj"
+".\Debug\IndustriesDialog.obj"
+".\Debug\IndustryCarDetailDialog.obj"
+".\Debug\IndustryCarOrdersDialog.obj"
+".\Debug\IndustryDetailDialog.obj"
+".\Debug\IndustryDetailDialog_Cars.obj"
+".\Debug\IndustryDetailDialog_Commodities.obj"
+".\Debug\industryDetailTabCtrl.obj"
+".\Debug\IndustryUsageDialog.obj"
+".\Debug\LocationDetailDialog.obj"
+".\Debug\LocationDialog.obj"
+".\Debug\LocomotiveDetailDialog.obj"
+".\Debug\LocomotiveDialog.obj"
+".\Debug\MainFrm.obj"
+".\Debug\NewVersionDialog.obj"
+".\Debug\PDFViewerDialog.obj"
+".\Debug\PhysicalLayoutDialog.obj"
+".\Debug\PreferencesDialog.obj"
+".\Debug\Reports.obj"
+".\Debug\RunTrainsDialog.obj"
+".\Debug\ScheduledTrainsReportsDialog.obj"
+".\Debug\SidingDetailDialog.obj"
+".\Debug\SidingsDialog.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TerminateNewLocationDialog.obj"
+".\Debug\TerminateTrainDialog.obj"
+".\Debug\TrainDetailDialog.obj"
+".\Debug\TrainOps.obj"
+".\Debug\TrainOpsDoc.obj"
+".\Debug\TrainOpsView.obj"
+".\Debug\TrainsDialog.obj"
+".\Debug\font.obj"
+".\Debug\mschart.obj"
+".\Debug\vcaxis.obj"
+".\Debug\vcaxisgrid.obj"
+".\Debug\vcaxisscale.obj"
+".\Debug\vcaxistitle.obj"
+".\Debug\vcbackdrop.obj"
+".\Debug\vcbrush.obj"
+".\Debug\vccategoryscale.obj"
+".\Debug\vccolor.obj"
+".\Debug\vccoor.obj"
+".\Debug\vcdatagrid.obj"
+".\Debug\vcdatapoint.obj"
+".\Debug\vcdatapointlabel.obj"
+".\Debug\vcdatapoints.obj"
+".\Debug\vcfill.obj"
+".\Debug\vcfont.obj"
+".\Debug\vcfootnote.obj"
+".\Debug\vcframe.obj"
+".\Debug\vcintersection.obj"
+".\Debug\vclabel.obj"
+".\Debug\vclabels.obj"
+".\Debug\vclcoor.obj"
+".\Debug\vclegend.obj"
+".\Debug\vclight.obj"
+".\Debug\vclightsource.obj"
+".\Debug\vclightsources.obj"
+".\Debug\vclocation.obj"
+".\Debug\vcmarker.obj"
+".\Debug\vcpen.obj"
+".\Debug\vcplot.obj"
+".\Debug\vcplotbase.obj"
+".\Debug\vcrect.obj"
+".\Debug\vcseries.obj"
+".\Debug\vcseriescollection.obj"
+".\Debug\vcseriesmarker.obj"
+".\Debug\vcseriesposition.obj"
+".\Debug\vcshadow.obj"
+".\Debug\vcstatline.obj"
+".\Debug\vctextlayout.obj"
+".\Debug\vctick.obj"
+".\Debug\vctitle.obj"
+".\Debug\vcvaluescale.obj"
+".\Debug\vcview3d.obj"
+".\Debug\vcwall.obj"
+".\Debug\vcweighting.obj"
+".\Debug\amsEdit.obj"
+".\Debug\CheckableGroupBox.obj"
+".\Debug\ColorEdit.obj"
+".\Debug\ColorStatic.obj"
+".\Debug\ComboListCtrl.obj"
+".\Debug\CoolBtn.obj"
+".\Debug\Draw.obj"
+".\Debug\InPlaceCombo.obj"
+".\Debug\InPlaceEdit.obj"
+".\Debug\InputBox.obj"
+".\Debug\LinePlot.obj"
+".\Debug\MenuXP.obj"
+".\Debug\SplashScreenEx.obj"
+".\Debug\StatusBarXP.obj"
+".\Debug\TBTreeStateMgr.obj"
+".\Debug\TextScroller.obj"
+".\Debug\TOListCtrl.obj"
+".\Debug\Tools.obj"
+".\Debug\TreeCtrlEx.obj"
+".\Debug\VisualStylesXP.obj"
+".\Debug\XComboList.obj"
+".\Debug\XHeaderCtrl.obj"
+".\Debug\XListCtrl.obj"
+".\Debug\ResizableDialog.obj"
+".\Debug\ResizableFormView.obj"
+".\Debug\ResizableGrip.obj"
+".\Debug\ResizableLayout.obj"
+".\Debug\ResizableMinMax.obj"
+".\Debug\ResizablePage.obj"
+".\Debug\ResizablePageEx.obj"
+".\Debug\ResizableSheet.obj"
+".\Debug\ResizableSheetEx.obj"
+".\Debug\ResizableState.obj"
+".\Debug\CppSQLite3.obj"
+".\Debug\julian.obj"
+".\Debug\Parseit.obj"
+".\Debug\RestartAPI.obj"
+".\Debug\SimpleDate.obj"
+".\Debug\XMLite.obj"
+".\Debug\TrainOps.res"
+]
+Creating command line "link.exe @C:\Users\BOBMCC~1\AppData\Local\Temp\RSP29E7.tmp"
+<h3>Output Window</h3>
+Compiling...
+Reports.cpp
+C:\Users\Bob McCown\Documents\Visual Studio 2008\Projects\TrainOps\Reports.cpp(1882) : warning C4305: 'argument' : truncation from 'const double' to 'float'
+Linking...
+
+
+
+<h3>Results</h3>
+TrainOps.exe - 2 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,1548 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Bob McCown dba Large Scale Central\0"
+            VALUE "FileDescription", "TrainOps\0"
+            VALUE "FileVersion", "1,0,0,77\0"
+            VALUE "LegalCopyright", "Copyright © 2006-2012 Bob McCown dba Large Scale Central,\nAll Rights Reserved\0"
+            VALUE "ProductName", "TrainOps\0"
+            VALUE "ProductVersion", "1,0,0,77\0"
+            VALUE "OriginalFilename", "TRAINOPS.EXE\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TrainOps.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TrainOps.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FOLDERS             BITMAP  DISCARDABLE     "res\\folders.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\splash.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Preferences...",              ID_FILE_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Configure"
+    BEGIN
+        MENUITEM "Physical Layout",             ID_CONFIGURE_PHYSICALLAYOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Car Types",                   ID_CONFIGURE_CARTYPES
+        MENUITEM "Commodities",                 ID_CONFIGURE_COMMODITIES
+        MENUITEM "Cars",                        ID_CONFIGURE_CARS
+        MENUITEM SEPARATOR
+        MENUITEM "Locomotives",                 ID_CONFIGURE_LOCOMOTIVES
+        MENUITEM "Caboose",                     ID_CONFIGURE_CABOOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Trains",                      IDM_TRAINS
+    END
+    POPUP "&Run Trains"
+    BEGIN
+        MENUITEM "Run",                         ID_RUNTRAINS_RUNTRAINS
+    END
+    POPUP "Reports"
+    BEGIN
+        POPUP "Car Location Reports"
+        BEGIN
+            MENUITEM "Car Location - All",          ID_REPORTS_CARLOCATION
+            MENUITEM "Car Location - Trains",       ID_REPORTS_CARLOCATIONREPORTS_CARLOCATIONTRAINS
+
+            MENUITEM SEPARATOR
+            MENUITEM "Car Location Sorted - All",   ID_REPORTS_CARLOCATIONREPORTS_CARLOCATIONSORTEDALL
+
+        END
+        MENUITEM "Industry Orders...",          ID_REPORTS_CARSNEEDED
+        MENUITEM "Cars Not Found...",           ID_REPORTS_CARSNOTFOUND
+        MENUITEM "Equipment Location...",       ID_REPORTS_EQUIPMENTLOCATION
+        MENUITEM "Equipment Tracking...",       ID_REPORTS_EQUIPMENTTRACKING
+        MENUITEM "Industry Usage...",           ID_REPORTS_INDUSTRYUSAGE
+        MENUITEM "Train History...",            ID_REPORTS_TRAINHISTORY
+        MENUITEM "Train Building Form",         ID_REPORTS_TRAINBUILDINGFORM
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                IDM_HELP_TOPICS
+        MENUITEM SEPARATOR
+        MENUITEM "Manage TrainOps License...",  IDM_HELP_MANAGELICENSE
+        MENUITEM "Register TrainOps...",        IDM_HELP_REGISTER
+        MENUITEM SEPARATOR
+        POPUP "Support"
+        BEGIN
+            MENUITEM "Send DB",                     IDM_HELP_SENDDB
+            MENUITEM "Open Data Directory",         IDM_HELP_SUPPORT_OPENDATADIRECTORY
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "View Release Notes",          ID_HELP_RELEASENOTES
+        MENUITEM "&About TrainOps...",          ID_APP_ABOUT
+    END
+END
+
+IDR_LOCATIONMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Location Menu"
+    BEGIN
+        MENUITEM "New Siding",                  ID_SIDINGMENU_NEWSIDING
+        MENUITEM "Edit Location",               ID_LOCATIONMENU_EDITLOCATION
+        MENUITEM "Delete Location",             ID_LOCATIONNMENU_DELETELOCATION
+
+    END
+END
+
+IDR_SIDINGMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Siding Menu"
+    BEGIN
+        MENUITEM "New Industry",                ID_INDUSTRYMENU_NEWINDUSTRY
+        MENUITEM "Edit Siding",                 ID_SIDINGMENU_EDITSIDING
+        MENUITEM "Delete Siding",               ID_SIDINGMENU_DELETESIDING
+    END
+END
+
+IDR_INDUSTRYMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Industry menu"
+    BEGIN
+        MENUITEM "Edit Industry",               ID_INDUSTRYMENU_EDITINDUSTRY
+        MENUITEM "Delete Industry",             ID_INDUSTRYMENU_DELETEINDUSTRY
+
+    END
+END
+
+IDR_NEWLOCATIONMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "New Location"
+    BEGIN
+        MENUITEM "New Location",                ID_LOCATIONMENU_NEWLOCATION
+    END
+END
+
+IDR_EQUIPMENTNOTFOUNDMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Prune Data to Here",          IDM_PRUNETOHERE
+    END
+END
+
+IDM_TERMINATETRAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Change Location...",          ID__CHANGELOCATION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 313, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TrainOps"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "LSC TrainOps Version 0.1b",IDC_VERSIONTEXT,41,10,119,8,
+                    SS_NOPREFIX
+    CTEXT           "Copyright (C) 2006 - 2011 - Large Scale Central",
+                    IDC_COPYRIGHTTEXT,7,139,299,8
+    DEFPUSHBUTTON   "OK",IDOK,256,7,50,14,WS_GROUP
+    LTEXT           "Static",IDC_SCROLLTEXT,42,41,264,89,SS_SUNKEN
+    LTEXT           "Trial License",IDC_LICENSING,41,27,168,8
+END
+
+IDD_CARTYPES_DIALOG DIALOG DISCARDABLE  0, 0, 279, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Car Types"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,222,7,50,14
+    CONTROL         "List1",IDC_CARTYPE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,7,7,207,151
+    DEFPUSHBUTTON   "New...",IDC_ADD_BUTTON,222,31,50,14
+    PUSHBUTTON      "Delete",IDC_DELETE_BUTTON,222,68,50,14
+    PUSHBUTTON      "Edit...",IDC_EDIT_BUTTON,222,50,50,14
+END
+
+IDD_CARS_DIALOG DIALOGEX 0, 0, 478, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Cars"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,421,7,50,14
+    GROUPBOX        "Add Cars",IDC_STATIC,7,7,142,101
+    PUSHBUTTON      "Add ->>",IDC_ADDCARS,51,86,50,14
+    COMBOBOX        IDC_CARTYPE_COMBO,42,19,73,69,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Type:",IDC_STATIC,14,21,19,8
+    LTEXT           "Quantity:",IDC_STATIC,14,39,31,8
+    EDITTEXT        IDC_ADDCARS_QUAN,49,37,36,14,ES_AUTOHSCROLL
+    LTEXT           "Reporting Marks:",IDC_STATIC,13,54,55,8
+    EDITTEXT        IDC_CARTYPE_REPORTINGMARKS,13,66,127,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Edit Cars...",IDC_EDITCARSBUTTON,421,35,50,14,
+                    WS_DISABLED
+    CONTROL         "List1",IDC_CARSLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | WS_BORDER | 
+                    WS_TABSTOP,158,7,256,132
+END
+
+IDD_EDITCARDIALOG DIALOGEX 0, 0, 218, 206
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Edit Car Information"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,161,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,161,24,50,14
+    EDITTEXT        IDC_REPORTINGMARKS,85,24,60,14,ES_AUTOHSCROLL
+    LTEXT           "Reporting Marks:",IDC_STATIC,7,27,55,8
+    LTEXT           "Car Number:",IDC_STATIC,7,9,40,8
+    EDITTEXT        IDC_CARNUMBER,85,7,60,14,ES_AUTOHSCROLL
+    LTEXT           "Car Length (inches):",IDC_STATIC,7,44,64,8
+    EDITTEXT        IDC_CARLENGTH,85,42,60,14,ES_AUTOHSCROLL
+    LTEXT           "Weight (tons):",IDC_STATIC,7,62,45,8
+    EDITTEXT        IDC_WEIGHT,85,59,60,14,ES_AUTOHSCROLL
+    CONTROL         "Foreign Road",IDC_FOREIGN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,96,59,10
+    CONTROL         "Out of Service",IDC_OUTOFSERVICE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,129,64,10
+    EDITTEXT        IDC_NOTES,7,149,204,33,ES_AUTOHSCROLL
+    LTEXT           "Notes:",IDC_STATIC,7,139,22,8
+    CONTROL         "DateTimePicker1",IDC_MAINTDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,131,184,55,15
+    CONTROL         "Change Last Maintenance Date:",IDC_LASTMAINT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,186,119,10
+    LTEXT           "When empty return to:",IDC_STATIC,7,79,71,8
+    COMBOBOX        IDC_RETURNTOCOMBO,85,77,126,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Interchange via:",IDC_INTERCHANGEVIATEXT,19,109,52,8
+    COMBOBOX        IDC_INTERCHANGEVIACOMBO,85,107,126,30,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,124,204,2
+END
+
+IDD_LOCATIONDIALOG DIALOG DISCARDABLE  0, 0, 263, 143
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Locations"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,206,7,50,14
+    CONTROL         "List1",IDC_LOCATIONLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    WS_BORDER | WS_TABSTOP,7,7,188,129
+    PUSHBUTTON      "Add",IDC_ADDBUTTON,206,51,50,14
+    PUSHBUTTON      "Delete",IDC_DELBUTTON,206,87,50,14
+    PUSHBUTTON      "Edit",IDC_EDITBUTTON,206,69,50,14
+END
+
+IDD_SIDINGSDIALOG DIALOG DISCARDABLE  0, 0, 275, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Sidings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,218,7,50,14
+    CONTROL         "Tree1",IDC_SIDINGSTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,199,164
+    PUSHBUTTON      "Add",IDC_ADDBUTTON,218,43,50,14
+    PUSHBUTTON      "Delete",IDC_DELETEBUTTON,218,82,50,14
+    PUSHBUTTON      "Edit",IDC_EDITBUTTON,218,62,50,14
+END
+
+IDD_SIDINGDETAILDIALOG DIALOG DISCARDABLE  0, 0, 262, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Siding Detail"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,24,50,14
+    COMBOBOX        IDC_LOCATIONCOMBO,57,26,107,65,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Location:",IDC_STATIC,21,27,30,8
+    LTEXT           "Siding Name:",IDC_STATIC,10,10,43,8
+    EDITTEXT        IDC_SIDINGNAME,57,7,133,14,ES_AUTOHSCROLL
+    LTEXT           "Siding Length:",IDC_STATIC,7,47,46,8
+    EDITTEXT        IDC_CAPACITY,57,44,29,14,ES_AUTOHSCROLL
+    LTEXT           "inches",IDC_STATIC,90,47,22,8
+    GROUPBOX        "Siding is a yard",IDC_ISYARD,7,66,125,25
+    CONTROL         "Deliver empties here",IDC_EMPTIES,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,17,76,107,10
+    CONTROL         "Interchange Track",IDC_INTERCHANGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,141,75,75,10
+END
+
+IDD_INDUSTRYDIALOG DIALOG DISCARDABLE  0, 0, 275, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Industries"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,218,7,50,14
+    CONTROL         "Tree1",IDC_INDUSTRYTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,199,164
+    PUSHBUTTON      "Add",IDC_ADDBUTTON,218,43,50,14
+    PUSHBUTTON      "Delete",IDC_DELETEBUTTON,218,82,50,14
+    PUSHBUTTON      "Edit",IDC_EDITBUTTON,218,62,50,14
+END
+
+IDD_COMMODITIESDIALOG DIALOG DISCARDABLE  0, 0, 178, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Commodities"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,121,7,50,14
+    PUSHBUTTON      "Add",IDC_ADDBUTTON,121,43,50,14
+    PUSHBUTTON      "Delete",IDC_DELETEBUTTON,121,82,50,14
+    PUSHBUTTON      "Edit",IDC_EDITBUTTON,121,62,50,14
+    CONTROL         "List1",IDC_COMMODITYLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | WS_BORDER | 
+                    WS_TABSTOP,7,7,106,164
+END
+
+IDD_INDUSTRYDETAILDIALOG DIALOGEX 0, 0, 282, 273
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Industry Detail"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,225,7,50,14
+    EDITTEXT        IDC_INDUSTRYNAME,33,7,172,14,ES_AUTOHSCROLL
+    LTEXT           "Name:",IDC_STATIC,7,9,22,8
+    COMBOBOX        IDC_SIDINGCOMBO,34,25,172,81,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Siding:",IDC_STATIC,7,27,22,8
+    PUSHBUTTON      "Cancel",IDCANCEL,225,25,50,14
+    LTEXT           "Local\nInstructions:",IDC_STATIC,7,44,40,19
+    EDITTEXT        IDC_LOCALINSTRUCTIONS,49,45,156,34,ES_MULTILINE | 
+                    ES_WANTRETURN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,7,113,268,153
+    LTEXT           "Static",IDC_RATIO_TEXT,7,82,268,8
+    LTEXT           "Static",IDC_RATIOERROR,7,102,268,8
+    LTEXT           "Static",IDC_USAGE_TEXT,7,92,268,8
+END
+
+IDD_INDUSTRYCARDETAILDIALOG DIALOG DISCARDABLE  0, 0, 197, 84
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Industry Car Detail"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,140,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,24,50,14
+    RTEXT           "Load/Unload Time:",IDC_LOADEMPTYTEXT,17,9,62,8
+    EDITTEXT        IDC_LOADEMPTY,85,7,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Maximum Cars per Day:",IDC_TEXT1,7,47,75,8
+    LTEXT           "Minimum Cars per Day:",IDC_STATIC,8,28,73,8
+    LTEXT           "Chance of Each Car:",IDC_TEXT3,14,66,67,8
+    EDITTEXT        IDC_QUANHIGH,85,45,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_QUANLOW,85,26,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_PERCENT,84,63,31,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "days",IDC_STATIC,120,9,16,8
+    LTEXT           "%",IDC_TEXT4,118,66,8,8
+END
+
+IDD_EDITCOMMODITYDIALOG DIALOG DISCARDABLE  0, 0, 188, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Edit Commodity"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,24,50,14
+    LTEXT           "Name:",IDC_STATIC,7,9,22,8
+    EDITTEXT        IDC_COMMODITYNAME,31,7,90,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_CARTYPES,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | WS_BORDER | WS_TABSTOP,32,26,89,116
+    LTEXT           "Cars:",IDC_STATIC,7,26,17,8
+END
+
+IDD_LOCOMOTIVEDIALOG DIALOGEX 0, 0, 424, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Locomotives"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LOCOLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    WS_BORDER | WS_TABSTOP,7,7,351,142
+    PUSHBUTTON      "New...",IDC_NEWBUTTON,367,26,50,14
+    DEFPUSHBUTTON   "OK",IDOK,367,7,50,14
+    PUSHBUTTON      "Delete",IDC_DELETEBUTTON,367,64,50,14
+    PUSHBUTTON      "Edit...",IDC_EDITBUTTON,367,45,50,14
+END
+
+IDD_LOCATIONDETAILDIALOG DIALOG DISCARDABLE  0, 0, 315, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Edit Location"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LOCATIONNAME,68,7,178,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,258,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,258,24,50,14
+    LTEXT           "Name:",IDC_STATIC,7,9,22,8
+    LTEXT           "Local Instructions:",IDC_STATIC,7,25,58,8
+    EDITTEXT        IDC_LOCALINSTRUCTIONS,68,25,178,36,ES_MULTILINE
+END
+
+IDD_PREFDIALOG DIALOGEX 0, 0, 304, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Preferences and Defaults"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_RRNAME,66,7,171,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REPORTINGMARKS,99,25,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATE,99,43,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOADEMPTY,99,62,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OFFLAYOUTTIME,200,62,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CARLENGTH,99,81,40,14,ES_AUTOHSCROLL
+    CONTROL         "Cars",IDC_METHOD,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    16,114,30,10
+    CONTROL         "Commodities",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,63,
+                    114,55,10
+    EDITTEXT        IDC_LOGO,41,138,198,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,247,138,50,14
+    DEFPUSHBUTTON   "OK",IDOK,247,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,247,24,50,14
+    LTEXT           "Railroad Name:",IDC_STATIC,7,9,50,8
+    LTEXT           "Reporting Marks:",IDC_STATIC,7,28,55,8
+    LTEXT           "Default load/empty time:",IDC_STATIC,7,64,78,8
+    LTEXT           "Default Car Length (inches):",IDC_STATIC,7,83,89,8
+    GROUPBOX        "Use this method for trains",IDC_STATIC,7,100,132,34
+    LTEXT           "Railroad Date:",IDC_STATIC,7,46,46,8
+    LTEXT           "Off-Layout time:",IDC_STATIC,146,64,50,8
+    LTEXT           "This is your RRs 'start date', or era.",IDC_STATIC,155,
+                    46,142,8
+    LTEXT           "Logo for\nReports:",IDC_STATIC,7,137,34,15
+    CONTROL         "Use Realistic Printouts (when available)",
+                    IDC_REALISTICPRINT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    149,82,140,10
+END
+
+IDD_EDITTRAIN DIALOGEX 0, 0, 447, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Edit Train"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ROUTENAME,54,7,138,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROUTECODE,259,7,34,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_AVAILABLELOCATIONLIST,7,45,88,114,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add ->",IDC_ADDBUTTON,100,77,50,14
+    PUSHBUTTON      "<- Remove",IDC_REMOVEBUTTON,100,101,50,14
+    LISTBOX         IDC_ROUTELOCATIONLIST,155,46,88,116,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Up",IDC_UPBUTTON,249,77,23,14
+    PUSHBUTTON      "Down",IDC_DOWNBUTTON,249,101,23,14
+    CONTROL         "List3",IDC_INDUSTRYLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | LVS_NOCOLUMNHEADER | WS_BORDER | 
+                    WS_TABSTOP,286,54,146,64
+    CONTROL         "Drop cars for local switcher",IDC_LOCALSWITCHER,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,285,136,101,
+                    10
+    DEFPUSHBUTTON   "OK",IDOK,390,7,50,14
+    LTEXT           "Available Locations:",IDC_STATIC,7,35,64,8
+    LTEXT           "Train Locations:",IDC_STATIC,155,35,52,8
+    GROUPBOX        "Switching Industructions",IDC_INDUSTRIESGROUP,278,43,
+                    162,119
+    LTEXT           "Train Name:",IDC_STATIC,7,10,40,8
+    LTEXT           "Code (1-4 chars):",IDC_STATIC,197,10,55,8
+    PUSHBUTTON      "Cancel",IDCANCEL,390,25,50,14
+    CONTROL         "Switch Interchanges at this location",
+                    IDC_INTERCHANGECHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,285,148,128,10
+    LTEXT           "Maximum Moves:",IDC_MAXMOVESTEXT,285,122,56,8,
+                    WS_DISABLED
+    EDITTEXT        IDC_MAXMOVES,344,120,40,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_TRAINSDIALOG DIALOG DISCARDABLE  0, 0, 282, 266
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Trains"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,225,7,50,14
+    CONTROL         "Tree1",IDC_TRAINS,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_FULLROWSELECT | 
+                    WS_BORDER | WS_TABSTOP,7,7,208,252
+    PUSHBUTTON      "Edit...",IDC_EDITTRAIN,225,48,50,14
+    PUSHBUTTON      "Delete",IDC_DELETETRAIN,225,66,50,14
+    PUSHBUTTON      "New...",IDC_NEWTRAIN,225,30,50,14
+END
+
+IDD_RUNTRAINSDIALOG DIALOGEX 0, 0, 461, 244
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Run Trains"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,404,16,50,14
+    CONTROL         "List1",IDC_TRAINLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    WS_BORDER | WS_TABSTOP,7,16,389,85
+    LTEXT           "Available Trains:",IDC_STATIC,7,7,53,8
+    CONTROL         "List2",IDC_RUNNINGTRAINSLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    WS_BORDER | WS_TABSTOP,7,127,389,110
+    LTEXT           "Built Trains:",IDC_STATIC,7,117,38,8
+    PUSHBUTTON      "Terminate...",IDC_TERMINATEBUTTON,404,223,50,14
+    PUSHBUTTON      "Build Train",IDC_BUILDTRAINBUTTON,404,87,50,14
+    PUSHBUTTON      "Delete",IDC_DELETEBUTTON,404,204,50,14
+    LTEXT           "Current Railroad date:",IDC_STATIC,225,109,70,8
+    EDITTEXT        IDC_CURRENTDATE,301,106,49,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "+ 1 Day",IDC_ADVANCE,356,107,35,12
+    PUSHBUTTON      "Details...",IDC_TRAINDETAILBUTTON,404,127,50,14
+    PUSHBUTTON      "Reports...",IDC_REPORTSBUTTON,404,163,50,14
+    PUSHBUTTON      "Recalc Cars",IDC_RECALC,404,68,50,14
+END
+
+IDD_DATEDIALOG DIALOG DISCARDABLE  0, 0, 261, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Advance Date"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,204,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,204,24,50,14
+    LTEXT           "Current Datestamp:",IDC_STATIC,7,8,62,8
+    EDITTEXT        IDC_DATE,74,7,42,12,ES_AUTOHSCROLL
+    LTEXT           "Advance",IDC_STATIC,7,29,30,8
+    EDITTEXT        IDC_ADVACNCE,42,26,26,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED
+    LTEXT           "Days",IDC_STATIC,75,29,20,8
+    PUSHBUTTON      "Reset All DateStamps",IDC_RESETBUTTON,86,85,87,14
+END
+
+IDD_TERMINATETRAINDIALOG DIALOGEX 0, 0, 449, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Terminate a Train"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,392,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,392,24,50,14
+    LTEXT           "Train XXXX on route YYYYYYYYYYYYYYYYYYYYYYYYY (point A to point B)",
+                    IDC_TRAINDESCRIPTION,7,7,358,8
+    CONTROL         "List1",IDC_TRAINLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    LVS_AUTOARRANGE | LVS_EDITLABELS | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,23,375,149
+    LTEXT           "Make sure car destinations are correct, then hit 'OK' to terminate this train, or hit 'Cancel' to exit without terminating the train.",
+                    IDC_STATIC,7,176,387,8
+END
+
+IDD_CABOOSEDIALOG DIALOG DISCARDABLE  0, 0, 251, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Cabooses"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,194,7,50,14
+    CONTROL         "List1",IDC_CABOOSELIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | WS_BORDER | 
+                    WS_TABSTOP,7,7,177,89
+    PUSHBUTTON      "Add",IDC_ADDBUTTON,194,43,50,14
+    PUSHBUTTON      "Delete",IDC_DELETEBUTTON,194,82,50,14
+    PUSHBUTTON      "Edit",IDC_EDITBUTTON,194,62,50,14
+END
+
+IDD_CABOOSEDETAILDIALOG DIALOGEX 0, 0, 228, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Caboose Detail"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,171,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,24,50,14
+    LTEXT           "Reporting Marks:",IDC_STATIC,7,9,55,8
+    LTEXT           "Car Number:",IDC_STATIC,19,27,40,8
+    LTEXT           "Length:",IDC_STATIC,33,46,25,8
+    EDITTEXT        IDC_REPORTINGMARKS,67,7,92,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CARNUMBER,68,25,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LENGTH,67,44,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NOTES,7,95,204,33,ES_AUTOHSCROLL
+    LTEXT           "Notes:",IDC_STATIC,7,85,22,8
+    CONTROL         "DateTimePicker1",IDC_MAINTDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,131,130,55,15
+    CONTROL         "Change Last Maintenance Date:",IDC_LASTMAINT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,133,119,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,67,214,2
+    CONTROL         "Out of Service",IDC_OUTOFSERVICE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,74,64,10
+END
+
+IDD_CARLOCATIONTRAINSDIALOG DIALOG DISCARDABLE  0, 0, 354, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Car Reports - Scheduled Trains"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,297,7,50,14
+    CONTROL         "List1",IDC_TRAINLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | WS_BORDER | WS_TABSTOP,7,17,281,137
+    PUSHBUTTON      "Print",IDC_REPORTBUTTON,297,40,50,14
+    LTEXT           "Select trains to print a location report for:",
+                    IDC_STATIC,7,7,128,8
+    PUSHBUTTON      "Print Sorted",IDC_REPORTSORTEDBUTTON,297,58,50,14
+END
+
+IDD_TRAINDETAILDIALOG DIALOGEX 0, 0, 456, 258
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Train Detail"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,399,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,399,24,50,14
+    CONTROL         "Tree1",IDC_TRAINDETAIL,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_CHECKBOXES | 
+                    WS_BORDER | WS_TABSTOP,7,26,381,177
+    LTEXT           "Locomotive:",IDC_STATIC,7,9,40,8
+    COMBOBOX        IDC_LOCOMOTIVELIST,50,7,99,54,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Caboose:",IDC_STATIC,155,9,31,8
+    COMBOBOX        IDC_CABOOSELIST,189,7,74,54,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Ignore Car Restrictions",IDC_IGNORERESTRICTIONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,300,9,87,10
+    EDITTEXT        IDC_TRAINNOTES,7,212,382,39,ES_MULTILINE
+    LTEXT           "Notes:",IDC_STATIC,7,203,22,8
+END
+
+IDD_PHYSICAL_LAYOUT_DIALOG DIALOGEX 0, 0, 360, 311
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Physical Layout"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,303,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,303,24,50,14
+    CONTROL         "Tree1",IDC_LAYOUT,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    TVS_INFOTIP | TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,
+                    7,7,290,297
+    PUSHBUTTON      "New Location",IDC_NEWLOCATIONBUTTON,303,52,50,14
+    PUSHBUTTON      "New Siding",IDC_NEWSIDINGBUTTON,303,70,50,14
+    PUSHBUTTON      "New Industry",IDC_NEWINDUSTRYBUTTON,303,88,50,14
+    PUSHBUTTON      "Edit Location",IDC_EDITLOCATIONBUTTON,303,116,50,14
+    PUSHBUTTON      "Edit Siding",IDC_EDITSIDINGBUTTON,303,135,50,14
+    PUSHBUTTON      "Edit Industry",IDC_EDITINDUSTRYBUTTON,303,153,50,14
+    PUSHBUTTON      "Delete",IDC_DELETEBUTTON,303,179,50,14
+    PUSHBUTTON      "Up",IDC_UPBUTTON,303,223,27,14
+    PUSHBUTTON      "Down",IDC_DOWNBUTTON,303,241,27,14
+END
+
+IDD_DEBUGDIALOG DIALOG DISCARDABLE  0, 0, 312, 277
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Debug"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_DEBUGLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,7,298,263
+END
+
+IDD_CARTYPE_DETAIL_DIALOG DIALOG DISCARDABLE  0, 0, 231, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Car Type Detail"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,174,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,24,50,14
+    LTEXT           "Type ID:",IDC_STATIC,7,10,28,8
+    LTEXT           "Description:",IDC_STATIC,7,30,38,8
+    EDITTEXT        IDC_CARTYPE_ID,51,7,37,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CARTYPE_DESCRIPTION,51,27,115,14,ES_AUTOHSCROLL
+    CONTROL         "Passenger Equipment",IDC_PASSENGER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,52,46,85,10
+END
+
+IDD_FINDDATABASE_DIALOG DIALOG DISCARDABLE  0, 0, 285, 188
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,228,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,228,24,50,14
+END
+
+IDD_CARSLIST_DIALOG DIALOGEX 0, 0, 487, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Cars List"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,430,7,50,14
+    CONTROL         "List1",IDC_CARSLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,7,415,136
+    PUSHBUTTON      "Edit Car...",IDC_EDITCARBUTTON,430,45,50,14
+    PUSHBUTTON      "Delete Car...",IDC_DELETECARBUTTON,430,63,50,14
+    PUSHBUTTON      "Add Car...",IDC_ADDCARBUTTON,430,28,50,14
+END
+
+IDD_PDFVIEW_DIALOG DIALOG DISCARDABLE  0, 0, 476, 319
+STYLE WS_POPUP | WS_CAPTION | WS_THICKFRAME
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "TrainOps Viewer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Print",IDC_PRINTBUTTON,419,7,50,14
+    PUSHBUTTON      "Close",ID_CLOSE,419,28,50,14
+END
+
+IDD_MANAGELICENSEDIALOG DIALOG DISCARDABLE  0, 0, 280, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Manage TrainOps License"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,223,7,50,14
+    LTEXT           "LSC TrainOps Version 0.1b",IDC_VERSIONTEXT,7,7,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Trial License",IDC_LICENSING,7,27,168,8
+    PUSHBUTTON      "Request License",IDC_LICENSEBUTTON,200,26,73,14
+    EDITTEXT        IDC_YOURNAME,61,45,124,14,ES_AUTOHSCROLL
+    LTEXT           "Name:",IDC_NAMETEXT,7,47,51,8
+    PUSHBUTTON      "Install License",IDC_INSTALL_LICENSE_BUTTON,200,45,73,
+                    14
+    PUSHBUTTON      "Un-License",IDC_UNLICENSE,200,25,73,14
+END
+
+IDD_INDUSTRYDETAILDIALOG_CARS DIALOG DISCARDABLE  0, 0, 267, 143
+STYLE WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTEXTHELP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_CARLISTIN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | WS_BORDER | 
+                    WS_TABSTOP,4,18,122,114
+    CONTROL         "List1",IDC_CARLISTOUT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | WS_BORDER | 
+                    WS_TABSTOP,135,18,122,114
+    LTEXT           "In:",IDC_STATIC,6,7,9,8
+    LTEXT           "Out:",IDC_STATIC,136,7,14,8
+END
+
+IDD_INDUSTRYDETAILDIALOG_COMMODITIES DIALOG DISCARDABLE  0, 0, 267, 143
+STYLE WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CONTEXTHELP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_COMMODITIESINLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | WS_BORDER | 
+                    WS_TABSTOP,4,18,122,114
+    CONTROL         "List1",IDC_COMMODITIESOUTLIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SORTASCENDING | 
+                    WS_BORDER | WS_TABSTOP,135,18,125,114
+    LTEXT           "In:",IDC_STATIC,6,7,9,8
+    LTEXT           "Out:",IDC_STATIC,136,7,14,8
+END
+
+IDD_EQUIPMENTLOCATIONDIALOG DIALOGEX 0, 0, 495, 261
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Equipment Location"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,438,7,50,14
+    CONTROL         "Tree1",IDC_EQUIPMENTTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,170,247
+    CONTROL         "List1",IDC_CARSLIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,181,32,307,222
+END
+
+IDD_NEWVERSIONDIALOG DIALOG DISCARDABLE  0, 0, 267, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Software Update Available"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",IDOK,37,31,60,14
+    PUSHBUTTON      "No",IDCANCEL,103,31,60,14
+    PUSHBUTTON      "Release Notes",IDC_VIEWREADMEBUTTON,169,31,60,14
+    CTEXT           "A new version of TrainOps is available\nDo you want to download and install the new version?",
+                    IDC_STATIC,7,7,253,19
+END
+
+IDD_EQUIPMENTTRACKINGDIALOG DIALOG DISCARDABLE  0, 0, 495, 262
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Equipment Tracking"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,438,7,50,14
+    CONTROL         "Tree1",IDC_EQUIPMENTTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,170,247
+    CONTROL         "List1",IDC_CARDATA,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,181,33,307,222
+END
+
+IDD_INDUSTRYUSAGEDIALOG DIALOG DISCARDABLE  0, 0, 495, 262
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Industry Usage"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,438,7,50,14
+    CONTROL         "Tree1",IDC_INDUSTRYTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,170,247
+    CONTROL         "List1",IDC_INDUSTRYDETAIL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,181,32,307,222
+END
+
+IDD_EQUIPMENTNOTFOUNDDIALOG DIALOG DISCARDABLE  0, 0, 495, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Equipment Not Found"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,438,7,50,14
+    CONTROL         "Tree1",IDC_EQUIPMENTTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,7,155,187
+    CONTROL         "Tree1",IDC_NOTFOUNDTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,168,27,320,166
+END
+
+IDD_LOCOMOTIVEDETAILDIALOG DIALOG DISCARDABLE  0, 0, 244, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Locomotive Details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,187,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,187,24,50,14
+    EDITTEXT        IDC_NUMBER,56,7,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCRIPTION,55,43,123,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROADNAME,56,25,122,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CARCAPACITY,56,62,23,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Active",IDC_ACTIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,64,36,10
+    LTEXT           "Number:",IDC_STATIC,20,11,28,8
+    LTEXT           "Road Name:",IDC_STATIC,8,28,41,8
+    LTEXT           "Car Capacity:",IDC_STATIC,7,64,43,8
+    LTEXT           "Description:",IDC_STATIC,10,46,38,8
+    EDITTEXT        IDC_NOTES,7,98,230,33,ES_AUTOHSCROLL
+    LTEXT           "Notes:",IDC_STATIC,7,88,22,8
+    CONTROL         "DateTimePicker1",IDC_MAINTDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,131,135,55,15
+    CONTROL         "Change Last Maintenance Date:",IDC_LASTMAINT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,137,119,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,82,230,2
+END
+
+IDD_SCHEDULEDTRAINSREPORTSDIALOG DIALOG DISCARDABLE  0, 0, 282, 190
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scheduled Trains"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,225,7,50,14
+    CONTROL         "Tree1",IDC_TRAINSTREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    TVS_CHECKBOXES | WS_BORDER | WS_TABSTOP,7,7,212,176
+    PUSHBUTTON      "Print",IDC_PRINTBUTTON,225,39,50,14
+END
+
+IDD_INDUSTRYCARORDERSDIALOG DIALOG DISCARDABLE  0, 0, 262, 211
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Industry Car Orders"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,7,50,14
+    CONTROL         "Tree1",IDC_INDUSTRYCARORDERTREE,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | WS_BORDER | WS_TABSTOP,7,
+                    7,191,197
+END
+
+IDD_TERMINATENEWLOCATIONDIALOG DIALOG DISCARDABLE  0, 0, 260, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Ending Location"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,203,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,203,24,50,14
+    LTEXT           "Select where this car ended up",IDC_STATIC,7,7,99,8
+    LISTBOX         IDC_INDUSTRYLIST,106,18,90,44,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LOCATIONLIST,7,18,90,94,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_SIDINGLIST,106,68,90,44,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 306
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_CARTYPES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_CARS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 471
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_EDITCARDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_LOCATIONDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_SIDINGSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_SIDINGDETAILDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_INDUSTRYDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_COMMODITIESDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_INDUSTRYDETAILDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_INDUSTRYCARDETAILDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_EDITCOMMODITYDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_LOCOMOTIVEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 417
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_LOCATIONDETAILDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_PREFDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_EDITTRAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 440
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_TRAINSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_RUNTRAINSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 454
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_DATEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_TERMINATETRAINDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 442
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_CABOOSEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_CABOOSEDETAILDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_CARLOCATIONTRAINSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_TRAINDETAILDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 449
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_PHYSICAL_LAYOUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 353
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+
+    IDD_DEBUGDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_CARTYPE_DETAIL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_FINDDATABASE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_CARSLIST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 480
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_PDFVIEW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 469
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 312
+    END
+
+    IDD_MANAGELICENSEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 273
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_INDUSTRYDETAILDIALOG_CARS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_INDUSTRYDETAILDIALOG_COMMODITIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_EQUIPMENTLOCATIONDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 254
+    END
+
+    IDD_NEWVERSIONDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_EQUIPMENTTRACKINGDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_INDUSTRYUSAGEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_EQUIPMENTNOTFOUNDDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 488
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_LOCOMOTIVEDETAILDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_SCHEDULEDTRAINSREPORTSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_INDUSTRYCARORDERSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_TERMINATENEWLOCATIONDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "TrainOps\n\nTrainO\n\n\nTrainOps.Document\nTrainO Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TrainOps"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_PREFERENCES     "Set railroad and program preferences "
+    ID_REPORTS_CARLOCATION  "Print a report of where all cars are"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CONFIGURE_CARS       "Set up cars"
+    ID_CONFIGURE_CARTYPES   "Configure your car types"
+    ID_CONFIGURE_COMMODITIES "Configure commodities (optional)"
+    ID_RUNTRAINS_RUNTRAINS  "Schedule and run trains"
+    ID_RUNTRAINS_ADVANCEDAY "Change the program 'datestamp'"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TrainOps.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
